@@ -1,0 +1,21 @@
+body{
+  background-image: url('C:\\Users\\Intel\\Desktop\\website\\Arunprasad\\pic3.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+}
+.demo{
+	font-size: 80px;
+	font-family: sans-serif;
+	padding-top: 100px;
+	margin-left: 150px;
+}
+.box{
+	width: 200px;
+	height: auto;
+	padding: 10px;
+}
+img{
+	width: 30%;
+	height: 100px;
+}
