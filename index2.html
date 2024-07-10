@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>portfolia website</title>
+	<link rel="stylesheet" type="text/css" href="port.css">
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="Arunprasad/img5.jpg" class="logo">
+			<ul>
+				<li><a href="#header">Home</li>
+				<li><a href="#about">About</li>
+				<li><a href="#services">Services</li>
+				<li><a href="#portfolio">My Work</li>
+				<li class="active"><a href="#Contact">Contact</li>
+			</ul>	
+		</nav>
+		<div class="text">
+			<p>FED Designer</p>
+			<h2>Hi, I'm <span>Arun </span><br><br>From Edunet iBM</h2>
+		</div>
+	</div>
+		
+</div>
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-1">
+				<img src="Arunprasad/ganesh.jpg">
+				
+			</div>
+			<div class="col-2">
+				<h1 class="title">About Me</h1>
+				<p>IBM is known for its hardware and software products, including computers, servers, storage systems and networking equipment. It also provides consulting, technology and business services, such as cloud computing, data analytics and artificial intelligence (AI).</p>
+				<div class="tab-titles">
+					<p class="links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="links" onclick="opentab('experiance')">Experiance</p>
+					<p class="links" onclick="opentab('education')">Education</p>
+
+				</div>
+				<div class="content active-tab" id="skills">
+					<ul>
+						<li><span>FED</span><br>Front End Development</li>
+						<li><span>APP Development</span><br>Android/ios apps</li>
+						<li><span>Cybersecurity</span><br>Secure The information</li>
+
+					</ul>
+				</div>
+				<div class="content" id="experiance">
+					<ul>
+						<li><span>In-Year :2020</span><br>Workrd As Front End Development</li>
+						<li><span>Year::2021</span><br>Lead Organization</li>
+					</ul>
+					
+				</div>
+				<div class="content" id="education">
+					<ul>
+						<li><span>FED</span><br>Front End Development</li>
+						<li><span>APP Development</span><br>Android/ios apps</li>
+						<li><span>Cybersecurity</span><br>Secure The information</li>
+
+					</ul>
+					
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div id="services">
+	<div class="container">
+	<h1 class="title">My Services</h1>
+	<div class="services-list">
+		<div>
+			<h2 style="color: brown">Web Design</h2>
+			<p style="color: brown">IBM is known for its hardware and software products.</p>
+			<a href="#">learn more</a>
+		</div>
+		<div>
+			<h2 style="color: brown">UI/UX Design</h2>
+			<p  style="color: brown">IBM is known for its hardware and software products.</p>
+			<a href="#">learn more</a>
+		</div>
+		<div>
+			<h2 style="color: brown">App Design</h2>
+			<p style="color: brown">IBM is known for its hardware and software products.</p>
+			<a href="#">learn more</a>
+		</div>
+	</div>
+
+	</div>
+</div> 
+<div id="portfolio">
+	<div class="container">
+		<h1 class="title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="Arunprasad/iot.jpg">
+				<div class="layer"><br>
+					<h3>Internet Of Things</h3><br>
+					<p>Iot is known for its hardware and software products.</p>					
+				</div>
+				
+			</div>
+			<div class="work">
+				<img src="Arunprasad/elect.jpg">
+				<div class="layer"><br>
+					<h3>Electronics</h3><br>
+					<p>Electronics is known for its hardware and software products.</p>					
+				</div>
+				
+			</div>
+			<div class="work">
+				<img src="Arunprasad/hack.jpg">
+				<div class="layer"><br>
+					<h3>Ethiical Hack</h3><br>
+					<p>Ethical hack is known for its hardware and software products.</p>					
+				</div>
+				
+			</div>
+		</div>
+		<a href="https://youtu.be/0YFrGy_mzjY" class="btn">See More</a>
+		
+	</div>
+	
+</div>
+<div class="Contact">
+	<div class="container">
+		<div class="row">
+			<div class="Contact-left">
+				<h1 class="title">Contact</h1>
+				<p>contact@example.com</p>
+				<p>0123456789</p>
+			</div>
+			<div class="Contact-right"></div>
+			<form class="submit-to-google-sheet">
+				<input type="text" name="Name" placeholder="Your Name" required>
+				<input type="Email" name="Email" placeholder="Your Email" required>
+				<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+				<button type="submit" class="btn2">Submit</button>
+			</form>
+
+		</div>
+		
+	</div>
+	<div class="copy">
+		<p>Copyright @ Arun Made with by IBM Edunet</p>
+		
+	</div>
+	
+</div>
+<script>
+	var links=document.getElementByClassName("links");
+	var content=document.getElementByClassName("content");
+
+
+	function opentab(tabname) {
+		for(link of links){
+			link.classList.remove("active-link");
+		}
+		for(contents of content){
+			contents.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script> 
+</body>
+</html>
